@@ -1,5 +1,5 @@
 #include <ClapTrap.hpp>
-#include <ScavTrap.hpp>
+#include <FragTrap.hpp>
 
 int	main(void)
 {
@@ -8,5 +8,7 @@ int	main(void)
 	henk.takeDamage(5);
 	peter.attack("Piet");
 	peter.beRepaired(3);
-	ScavTrap("Peer");
+	FragTrap peer("Peer");
+	peer.highFiveGuys();
+
 }
