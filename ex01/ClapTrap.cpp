@@ -11,7 +11,7 @@ ClapTrap::ClapTrap()
 	_attackDamage = 0;
 }
 
-ClapTrap::ClapTrap( std::string name) : _name(name)
+ClapTrap::ClapTrap(std::string name) : _name(name)
 {
 	std::cout << "ClapTrap " << _name << " created" << std::endl;
 	_hp = 10;
@@ -21,10 +21,7 @@ ClapTrap::ClapTrap( std::string name) : _name(name)
 
 ClapTrap::ClapTrap(const ClapTrap& ref)
 {
-	_attackDamage = ref._attackDamage;
-	_energy = ref._energy;
-	_hp = ref._hp;
-	_name = ref._name;
+	*this = ref;
 	std::cout << "ClapTrap copy constructor called" << std::endl;
 }
 

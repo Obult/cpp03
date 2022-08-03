@@ -1,4 +1,5 @@
 #include <ClapTrap.hpp>
+#include <ScavTrap.hpp>
 
 int	main(void)
 {
@@ -7,4 +8,5 @@ int	main(void)
 	henk.takeDamage(5);
 	peter.attack("Piet");
 	peter.beRepaired(3);
+	ScavTrap("Peer");
 }
