@@ -26,10 +26,7 @@ ScavTrap::ScavTrap(const ScavTrap& ref) : ClapTrap(ref)
 
 ScavTrap&	ScavTrap::operator=(const ScavTrap& ref)
 {
-	_attackDamage = ref._attackDamage;
-	_energy = ref._energy;
-	_hp = ref._hp;
-	_name = ref._name;
+    ClapTrap::operator=(ref);
 	return *this;
 }
 

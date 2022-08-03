@@ -8,5 +8,7 @@ int	main(void)
 	henk.takeDamage(5);
 	peter.attack("Piet");
 	peter.beRepaired(3);
-	ScavTrap("Peer");
+	ScavTrap peer("Peer");
+	ScavTrap peers = peer;
+	peers.guardGate();
 }
