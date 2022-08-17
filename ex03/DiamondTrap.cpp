@@ -34,5 +34,29 @@ DiamondTrap&	DiamondTrap::operator=(const DiamondTrap& ref)
 
 DiamondTrap::~DiamondTrap()
 {
+    std::cout << "diamond trap deleted" << std::endl;
+}
 
+std::string DiamondTrap::getDiaName() const
+{
+    return _name;
+}
+
+std::string DiamondTrap::getClapName() const
+{
+    return ClapTrap::_name;
+}
+
+std::ostream& operator<<(std::ostream & os, const DiamondTrap& fx)
+{
+    os <<
+        fx.getDiaName() <<
+        " is my DiaName" <<
+        std::endl <<
+        fx.getClapName() <<
+        " is my ClapName" <<
+        fx._hp << " " <<
+        fx._energy << " " <<
+        fx._attackDamage;
+    return os;
 }

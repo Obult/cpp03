@@ -14,6 +14,14 @@ public:
 	DiamondTrap(const DiamondTrap& ref);
 	DiamondTrap& operator=(const DiamondTrap& ref);
 	~DiamondTrap();
+
+	// GETTERS
+	std::string	getDiaName() const;
+	std::string getClapName() const;
+
+	friend std::ostream& operator<<(std::ostream & os, const DiamondTrap& fx);
 };
+
+std::ostream& operator<<(std::ostream & os, const DiamondTrap& fx);
 
 #endif
