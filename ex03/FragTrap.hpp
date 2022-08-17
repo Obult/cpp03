@@ -3,14 +3,14 @@
 
 #include <ClapTrap.hpp>
 
-class	FragTrap : virtual ClapTrap
+class	FragTrap : public virtual ClapTrap
 {
 public:
 	FragTrap();
 	FragTrap(std::string name);
 	FragTrap(const FragTrap& ref);
 	FragTrap& operator=(const FragTrap& ref);
-	~FragTrap();
+	virtual ~FragTrap();
 
 	void	highFiveGuys(void);
 };

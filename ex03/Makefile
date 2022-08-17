@@ -1,5 +1,5 @@
 NAME		= tests
-SRC			= main.cpp ClapTrap.cpp ScavTrap.cpp
+SRC			= main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp DiamondTrap.cpp
 CC			= c++
 RM			= rm -f
 HEADER		= -I .
